@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap");
+ 
+:root{
+    --background: #06140b;
+    --primary: #12335e;
+    --secondary: #15625e;
+    --btn-l: #2c2fcc;
+    --btn-r: #a51629;
+    --text: rgb(253, 253, 253);
+    --nav-color: #0fe44f;
+    --el-nucba: rgb(58, 34, 3);
+    --monitor: rgba(20, 13, 14, 0.774);
+    
+
+ }
+ html{
+    background-color: var(--background);
+ }
+*{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box;
+    font-family: 'Instrument Serif', serif;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+nav{
+
+    margin: 30px ;
+     display: flex;
+   justify-content: space-around;
+   font-family: 'Poltawski Nowy';
+   align-items: center;
+   background-color: var(--nav-color);
+   border-radius: 20px;
+   font-weight: 800;
+   font-display: black;
+ }
+ .img {
+    width: 80px;
+ }
+ 
+ ul{
+     list-style: none;
+     display: flex;
+     gap: 50px;
+ }
+main{
+    background-image: linear-gradient(to bottom, #0fe44f, #06140b);
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    /*width: 100%;*/
+    margin: 30px 30px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+/* secciones */
+#hero{
+    margin-top: 65px;
+    padding:  0 70px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    height: 600px;
+    gap: 30px;
+}
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 50%;
+    
+}
+.hero-info h1{
+    font-size: 75px;
+    width: 70%;
+    min-width: 500px;
+    font-weight: 700;
+    color: var(--text);
+    
+}
+.hero-info .links {
+    display: flex;
+    justify-content:center;  
+  /*  border-radius: 15px;*/
+    gap: 20px;
+    
+}
+.hero_img img{
+       width: 500px;
+       background: var(--monitor);
+       padding: 20px;
+       border-radius: 15px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       gap: 20px;
+}
+.hero-info p span{
+    font-weight: 700;
+    color: var(--monitor);
+}
+.hero-info .link, button {
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
+    border-radius: 20px;
+    font-weight: 700;
+    opacity: ;
+    text-decoration: #bfcac3;
+    font-size: 17px;
+    background-color: var(--btn-l);
+    gap: 50px;
+    position: relative;
+    top: 60px;
+}
+.hero-info .link, a:first-child{
+background-color: var(--btn-r);    
+}
+#text{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    top: 30px;
+    opacity: 0.7;
+    background-color: #06140b;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: solid var(--text);
+    text-shadow: #621a15;
+    font-size:  24px;
+}
+
+
+
+
+ 
