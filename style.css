@@ -123,8 +123,9 @@ main{
     position: relative;
     top: 60px;
 }
-.hero-info .link > a:first-child{
+.hero-info, link > a:first-child{
 background-color: var(--btn-r);    
+border-radius:15px;
 }
 #text{
     width: 100%;
