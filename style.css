@@ -48,7 +48,7 @@ nav{
  }
 main{
     background-image: linear-gradient(to bottom, #0fe44f, #06140b);
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
