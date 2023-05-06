@@ -155,6 +155,207 @@ a:visited{
     text-decoration: solid var(--text);
     font-size:  24px;
 }
+
+
+@media (max-width: 1200px){
+    
+    .img{
+        width: 50px;
+        height: 50px;
+        
+    }
+    .img, img, ul{
+        gap: 40px;
+    }
+    #hero{
+        flex-wrap: nowrap;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+
+    }
+    .hero-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Josefin Sans', sans-serif;
+        gap: 20px;
+        width: 100%;
+        
+    }
+    .hero-info h1{
+        font-size: 50px;
+        width: 14px;
+        font-weight: 700;
+        color: var(--text);
+        
+    }
+    .hero-info .links {
+        display: flex;
+        justify-content:center;  
+      /*  border-radius: 15px;*/
+        gap: 30px;
+        
+    }
+    #hero{
+        gap: 15px;
+    }
+    .hero_img img{
+        width: 450px;
+        background: var(--monitor);
+        padding: 20px;
+        position: relative;
+        left: 50px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+ }
+   
+    .hero-info p{
+        font-size: 17px;
+        align-items: center;
+    }
+    .hero-info p span{
+        font-weight: 700;
+        color: var(--monitor);
+    }
+    .hero-info .link, button {
+        display: flex;
+        justify-content: space-around;
+        width: 150px;
+        height: 60px;
+        border-radius: 20px;
+        font-weight: 700;
+        /*opacity: 0.9 ;*/
+        background-color: var(--btn-l);
+        gap: 200px;
+        position: relative;
+        top: 60px;
+    }
+    .hero-info .links, button >a{
+        font-size: 30px;
+        position: relative;
+        font-family: 'Josefin Sans', sans-serif;
+        top: 15px;
+        gap: 50px;
+    }    
+    a:visited{
+        color: #06140b;
+    
+    }
+}
+@media (max-width: 992px){
+    .img{
+        width: 50px;
+        height: 50px;
+        
+    }
+    .img, img, ul{
+        gap: 40px;
+    }
+    #hero{
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 15px;
+        padding: 15px;
+        gap: 100px;
+
+    }
+    .hero-info{
+        display: flex;
+        flex-direction: center;
+        justify-content: center;
+        font-family: 'Josefin Sans', sans-serif;
+        gap: 15px;
+        width: 100%;
+        
+    }
+    .hero-info h1{
+        text-align: center;
+        position: relative;
+        left: 150px;
+        font-size: 42px;
+        width: 14px;
+        font-weight: 700;
+        color: var(--text);
+        
+    }
+    .hero-info .links {
+        display: flex;
+        justify-content:center;  
+      /*  border-radius: 15px;*/
+        gap: 15px;
+        
+    }
+    .hero-info p{
+        font-size: 15px;
+        align-items: center;
+    }
+    .hero-info p span{
+        font-weight: 700;
+        color: var(--monitor);
+    }
+    .hero-info .link, button {
+        display: flex;
+        justify-content: space-around;
+        width: 120px;
+        height: 50px;
+        border-radius: 20px;
+        font-weight: 700;
+        opacity: 0.9 ;
+        background-color: var(--btn-l);
+        gap: 200px;
+        position: relative;
+        top: 60px;
+    }
+    .hero-info .links, button >a{
+        font-size: 25px;
+        position: relative;
+        font-family: 'Josefin Sans', sans-serif;
+        top: 14px;
+        gap: 50px;
+    }    
+    a:visited{
+        color: #06140b;
+    
+    }
+}
+@media (max-width: 768px){
+    nav{
+        width: 90%;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        gap: 5px;
+    }
+    .img{
+        width: 40px;
+        height: 40px;
+    }
+    .img, img, ul{
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    .img, img, ul, li{
+        font-size: 15px;
+        
+    }
+    .hero-info h1{
+        position: relative;
+        left: 50px;
+        font-size: 45px;
+        width: 14px;
+        font-weight: 700;
+        color: var(--text);
+        
+    }
+
+}
 @media (max-width:576px){
     nav {
         width: 90%;
@@ -167,7 +368,6 @@ a:visited{
     .img{
         width: 30px;
         height: 30px;
-        
     }
     .img, img, ul{
         gap: 15px;
@@ -250,4 +450,3 @@ a:visited{
     }
 
     }
-}
