@@ -7,7 +7,7 @@
     --btn-l: #2c2fcc;
     --btn-r: #a51629;
     --text: rgb(253, 253, 253);
-    --nav-color: #0fe44f;
+    --nav-color: #26d80f;
     --el-nucba: rgb(58, 34, 3);
     --monitor: rgba(20, 13, 14, 0.774);
     
@@ -48,7 +48,7 @@ nav{
      gap: 50px;
  }
 main{
-    background-image: linear-gradient(to bottom, #0fe44f, #06140b);
+    background-image: linear-gradient(to bottom, #26d80f, #06140b);
     border-radius: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
@@ -139,21 +139,90 @@ main{
     gap: 100px;
 }    
 a:visited{
-    color: #06140b;
+    color: #fdc200de;
 
 }
 
 #text{
+    margin: 80px;
     width: 100%;
     height: 150px;
     position: relative;
-    background-color: var(--background);
+    background-image: linear-gradient(to bottom, #06140b,  #0c5e0100);
     top: 50px;
-    opacity: 0.7;
+    opacity: 0.9;
     border-radius: 15px;
     text-align: center;
     text-decoration: solid var(--text);
     font-size:  24px;
+}
+
+/* cards sections*/
+#cards{
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+
+}
+.cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+/* seccion de cursos*/
+.podcast{
+    width: 60%;
+    height: 380px;
+    border-radius: 15px;
+    background-image: url(assets/lluviadigital.gif);
+}
+.podcast h3{
+    width: 60%;
+    position: relative;
+    left: 140px;
+    top: 10px;
+    background: transparent;
+    border-radius: 15px;
+    border: 2px solid rgba(20, 13, 14, 0.774);
+    border-radius: 15px;
+    backdrop-filter: blur(15px); 
+}
+.podcasto-section{
+    padding: 30px;
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+.podcasto{
+    background: transparent;
+    border-radius: 15px;
+    border: 2px solid rgba(20, 13, 14, 0.774);
+    border-radius: 15px;
+    backdrop-filter: blur(15px); 
+}
+.podcasto img{
+    width: 100%;
+    border-radius: 15px;
+}
+.noticia{
+    width: 40%;
+    border-radius: 15px;
+    background-image:  linear-gradient(to bottom, #06140b,  #0000005e); ;
+}
+#cards, .cards-container, .noticia img{
+   
+    width: 100%;
+    border-radius: 15px;
+}
+
+#cards, .cards-container, .noticia >a{
+    text-align: center;
+    font-size: 24px;
 }
 
 
