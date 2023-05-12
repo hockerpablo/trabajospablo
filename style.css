@@ -10,6 +10,7 @@
     --nav-color: #26d80f;
     --el-nucba: rgb(58, 34, 3);
     --monitor: rgba(20, 13, 14, 0.774);
+    --link-a-noticias: #rgb(250,235,215);
     
 
  }
@@ -43,6 +44,9 @@ nav{
  }
  .navbar-list .img{
     display: none;
+ }
+ .navbar-list li>a{
+       color: black;
  }
  .navbar i{
     display: none;
@@ -136,24 +140,18 @@ main{
     position: relative;
     top: 60px;
 }
-.link2 {
- background-color: var(--btn-r);
-}
-
-/*.hero.info .link ,button:first-child{
+.hero-info .links button:first-child{
     background-color: var(--btn-r);
-}*/
-.hero-info .links, button >a{
+} 
+
+.hero-info .links button >a{
+    color: black;
     font-size: 35px;
     position: relative;
     font-family: 'Josefin Sans', sans-serif;
     top: 13px;
     gap: 100px;
 }    
-a:visited{
-    color: #000000de;
-
-}
 
 #text{
     margin: 80px;
@@ -192,6 +190,11 @@ a:visited{
     height: 380px;
     border-radius: 15px;
     background-image: url(assets/lluviadigital.gif);
+    transition: all.4s;
+}
+.podcast:hover{
+   width: 700px;
+   height: 660px;
 }
 .podcast h3{
     width: 60%;
@@ -218,7 +221,7 @@ a:visited{
     backdrop-filter: blur(15px); 
 }
 .podcasto a{
-    text-decoration: aqua;
+    color: var(--link-a-noticias);
 }
 .podcasto img{
     width: 100%;
@@ -226,8 +229,18 @@ a:visited{
 }
 .noticia{
     width: 40%;
+    height: 350px;
     border-radius: 15px;
     background-image:  linear-gradient(to bottom, #06140b,  #0000005e); ;
+    overflow: hidden;
+    transition: all.4s;
+}
+.noticia:hover{
+  width: 60%;
+  height: 600px;
+}
+.noticia a{
+    color: var(--link-a-noticias);
 }
 #cards, .cards-container, .noticia img{
    
@@ -253,26 +266,50 @@ a:visited{
 }
 .contacts{
     display: flex;
-    gap: 2rem
-;
+    gap: 2rem;
 }
 .cont ul  {
-    background: var(--background);
+    /*background: var(--background);*/
     padding: 15px;
-    width: 300px;
+    width: 400px;
     height: 500px;
     flex-wrap: wrap;
+    border-radius: 15px;
 }
 .cont ul li{
     display: flex;
     gap: 15px;
     font-size: 25px;
 }
+.cont ul li a{
+    color: white;
+}
+/*aca debemos continuar*/
+
+.cont ul li i{
+    width: 3px;
+    height: 2px;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+    height: 18px;
+    background-color: black;
+    border-radius: 30px;
+    transition: all.4s;
+}
+.contul ul li i:hover{
+ width: 30px;
+ height: 30px;
+}
 .cont ul span{
-    font-size: 25px;
+    font-size: 35px;
 }
 .cont-img img{
-    width: 450px;
+    width: 700px;
+    border-radius: 200px;
+    position: relative;
+    left: 150px;
+    top: 50px;
 }
 
 
