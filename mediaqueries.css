@@ -37,7 +37,7 @@
     }
     .hero-info h1{
         font-size: 50px;
-        width: 14px;
+        width: 400px;
         font-weight: 700;
         color: var(--text);
         
@@ -134,19 +134,13 @@
 
         
     }
-    #hero .hero-info h1{
-        /*display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        font-size: 50px;*/
-        /*width: 14px;
-        font-weight: 700;
-        color: var(--text);*/
+    /*#hero .hero-info h1{
+        width: 300px;
+        height: 200px;
         position: relative;
         left: 8rem;
         
-    }
+    }*/
     .hero-info .links {
         display: flex;
         justify-content:center;  
@@ -170,12 +164,16 @@
  }
    
     .hero-info p{
-        font-size: 17px;
+        font-size: 25px;
         align-items: center;
     }
     .hero-info p span{
         font-weight: 700;
         color: var(--monitor);
+    }
+    .hero-info h1{
+        position: relative;
+        left: 200px;
     }
     .hero-info .link, button {
         display: flex;
@@ -198,7 +196,10 @@
         gap: 50px;
     }   
     
-    
+    #text{
+        position: relative;
+        top: 100px;
+    }
     /*cards section*/ 
     
     .noticia a{
@@ -365,7 +366,7 @@
         position: relative;
         left: 3rem;
         width: 700px;
-        font-size: 25px;
+        font-size: 22px;
     
     }
     .hero-info p span{
