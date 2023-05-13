@@ -278,17 +278,18 @@ main{
 }
 .cont ul li{
     display: flex;
-    gap: 15px;
+    gap: 10px;
     font-size: 25px;
 }
 .cont ul li a{
     color: white;
+
 }
 /*aca debemos continuar*/
 
 .cont ul li i{
-    width: 3px;
-    height: 2px;
+    width: 30px;
+    height: 30px;
     overflow: hidden;
     position: relative;
     top: 2px;
@@ -298,8 +299,8 @@ main{
     transition: all.4s;
 }
 .contul ul li i:hover{
- width: 30px;
- height: 30px;
+ width: 10px;
+ height: 100px;
 }
 .cont ul span{
     font-size: 35px;
@@ -311,5 +312,35 @@ main{
     left: 150px;
     top: 50px;
 }
+footer .fot-info{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.fot-info{
+  padding: 15px;
+  margin: 15px;
+}
+.fot-info .logo-emp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
 
+.fot-info .fot-pos,
+.fot-info h2{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.fot-info img{
+    width: 150px;
+    height: 150px;
+}
+.fot-info h2{ /*falta de seguir esta linea*/
+    font-style: oblique;
+    border: var(--btn-r);
+    border-color: #a51629;
 
+}
