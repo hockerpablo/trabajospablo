@@ -126,7 +126,6 @@
     }
     .hero-info{
         display: flex;
-        flex-direction: center;
         justify-content: center;
         font-family: 'Josefin Sans', sans-serif;
         gap: 20px;
@@ -134,13 +133,14 @@
 
         
     }
-    /*#hero .hero-info h1{
-        width: 300px;
+    #hero .hero-info h1{
+        width: 500px;
         height: 200px;
         position: relative;
-        left: 8rem;
+        top: 5rem;
+        left: 9rem;
         
-    }*/
+    }
     .hero-info .links {
         display: flex;
         justify-content:center;  
@@ -196,11 +196,15 @@
         gap: 50px;
     }   
     
-    #text{
+    #text {
         position: relative;
-        top: 100px;
+        top: 16rem;
     }
     /*cards section*/ 
+    #cards {
+        position: relative;
+        top: 10rem
+    }*/
     
     .noticia a{
         font-size: 25px;
