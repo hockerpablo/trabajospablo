@@ -10,7 +10,7 @@
     --nav-color: #26d80f;
     --el-nucba: rgb(58, 34, 3);
     --monitor: rgba(20, 13, 14, 0.774);
-    --link-a-noticias: #rgb(250,235,215);
+    --cards-txt: rgb(112, 177, 233);
     
 
  }
@@ -101,7 +101,8 @@ main{
 .hero-info h1{
     font-size: 75px;
     width: 70%;
-    /*min-width: 500px;*/
+    position: relative;
+    left: 5rem;
     font-weight: 700;
     color: var(--text);
     
@@ -184,7 +185,7 @@ main{
     align-items: center;
     gap: 40px;
 }
-/* seccion de cursos*/
+/* seccion de cards*/
 .podcast{
     width: 60%;
     height: 380px;
@@ -221,7 +222,7 @@ main{
     backdrop-filter: blur(15px); 
 }
 .podcasto a{
-    color: var(--link-a-noticias);
+    color: aquamarine;
 }
 .podcasto img{
     width: 100%;
@@ -229,10 +230,11 @@ main{
 }
 .noticia{
     width: 40%;
-    height: 350px;
+    height: 380px;
     border-radius: 15px;
     background-image:  linear-gradient(to bottom, #06140b,  #0000005e); ;
     overflow: hidden;
+    gap: 2rem;
     transition: all.4s;
 }
 .noticia:hover{
@@ -240,7 +242,8 @@ main{
   height: 600px;
 }
 .noticia a{
-    color: var(--link-a-noticias);
+    color: var(--cards-txt);
+    text-decoration: underline;
 }
 #cards, .cards-container, .noticia img{
    
@@ -260,11 +263,12 @@ main{
 .contacto h1{
     text-align: left;
     position:relative ;
-    left: 20rem;
+    left: 15rem;
     padding: 150px;
     font-size: 50px;
 }
 .contacts{
+    width: 800px;
     display: flex;
     gap: 2rem;
 }

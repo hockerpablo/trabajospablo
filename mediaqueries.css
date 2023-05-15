@@ -8,6 +8,7 @@
 --nav-color: #26d80f;
 --el-nucba: rgb(58, 34, 3);
 --monitor: rgba(20, 13, 14, 0.774);
+--cards-txt: rgb(112, 177, 233);
 }
 @media (max-width: 1200px){
     
@@ -93,11 +94,15 @@
         font-family: 'Josefin Sans', sans-serif;
         top: 15px;
         gap: 50px;
-    }    
-    a:visited{
-        color: #06140b;
-    
+    }  
+    .noticia a{
+         color: var(--cards-txt);
+         text-decoration: underline;
+    }  
+    .podcasto a{
+        color:aquamarine ;
     }
+    
 }
 @media (max-width: 992px){
     /*navbar*/
@@ -204,11 +209,12 @@
     #cards {
         position: relative;
         top: 10rem
-    }*/
+    }
     
     .noticia a{
         font-size: 25px;
-        color: aliceblue;
+        color:var(--cards-txt);
+        text-decoration: underline;
     }
     .podcast{ /*hay que reveer toda esta parte*/
         height: 80px;
@@ -275,10 +281,6 @@
     .navbar i{
         display: flex;
         font-size: 30px;
-    }
-   
-    .navbar ul{
-
     }
 
     .navbar-list{
@@ -426,26 +428,30 @@
     }
     .podcast{ /*hay que reveer toda esta parte*/
         height: 80px;
-        width: 230px;
+        width: 300px;
         overflow: hidden;
         transition: all .5s;
     }
     .podcast:hover{
-        width: 500px;
+        width: 700px;
         height: 650px;
         position: relative;
         left: 20px;
-
+    }
+    .podcast:hover h3{
+        position: relative;
+        left: 70px;
+        font-size: 25px;
     }
     .noticia{
         height: 80px;
-        width: 220px;
+        width: 300px;
         overflow: hidden;
         transition: all .5s;
     }
     .noticia:hover{
          width: 500px;
-         height: 600px;
+         height: 580px;
          position: relative;
          right: 20px;
          font-weight: 600;
@@ -454,7 +460,7 @@
         width: 70%;
         font-size: 18px;
         position: relative;
-        left: 2rem;
+        left: 3rem;
     }
     .podcasto-section{
         flex-wrap: wrap;
@@ -466,17 +472,12 @@
     
     /* contacto section*/
 
-
-    .contacto{
-        padding: 0;
-        margin: 0;
-    }
     .contacto h1{
           position: relative;
-          left: 75px;
+          left: 25px;
     }
     .cont ul  {
-        /*background: var(--background);*/
+        
         padding: 15px;
         width: 200px;
         height: 250px;
@@ -512,7 +513,7 @@
         font-size: 25px;
     }
     .cont-img img{
-        width: 250px;
+        width: 230px;
         border-radius: 180px;
         position: relative;
         left: 0px;
@@ -539,10 +540,6 @@
         font-size: 30px;
     }
    
-    .navbar ul{
-
-    }
-
     .navbar-list{
         background:#26d80f;
         width: 130px;
@@ -556,6 +553,7 @@
         gap: 10px;
         display: none;
         transition: all .4s;
+        z-index: 2;
     }
     /*.navbar-list:hover{
         background-image: linear-gradient(to bottom, #26d80f, #06140b);
@@ -608,7 +606,6 @@
         width: 500px;
         flex-wrap: wrap;
         position: relative;
-        /*top: 50px;*/
 
     }
     .hero-info{
@@ -644,7 +641,7 @@
     .hero-info .link, button {
         gap: 200px;
         position: relative;
-        left: 10px;
+        left: 30px;
         top: 60px;
 
     }
@@ -677,11 +674,12 @@
         text-decoration: underline;
         color: rgba(42, 143, 231, 0.5);
     }
-    .podcast{ /*hay que reveer toda esta parte*/
+    .podcast{ 
         height: 80px;
         width: 230px;
         overflow: hidden;
         transition: all .5s;
+        gap: 100px;
     }
     .podcast:hover{
         width: 500px;
@@ -691,7 +689,7 @@
     }
     .podcast:hover h3{
         position: relative;
-        left: 43px;
+        left: 3rem;
     }
     .noticia{
         height: 80px;
@@ -711,6 +709,7 @@
         font-size: 18px;
         position: relative;
         left: 2rem;
+        
     }
     .podcasto-section{
         flex-wrap: wrap;
@@ -722,14 +721,9 @@
     
     /* contacto section*/
 
-
-    .contacto{
-        padding: 0;
-        margin: 0;
-    }
     .contacto h1{
           position: relative;
-          left: -25px;
+          left: -65px;
     }
     .cont ul  {
         /*background: var(--background);*/
