@@ -11,7 +11,9 @@
 --cards-txt: rgb(112, 177, 233);
 }
 @media (max-width: 1200px){
-    
+.navbar{
+    width: 95%;
+}    
     .img{
         width: 50px;
         height: 50px;
@@ -19,6 +21,9 @@
     }
     .img, img, ul{
         gap: 40px;
+    }
+    main{
+        width:95%;
     }
     #hero{
         flex-wrap: nowrap;
@@ -102,12 +107,75 @@
     .podcasto a{
         color:aquamarine ;
     }
+    /* contacto section*/
+
+    .contacto h1{
+        position: relative;
+        left: 15rem;
+  }
+  .cont ul  {
+      
+      padding: 15px;
+      width: 300px;
+      height: 350px;
+      flex-wrap: wrap;
+      border-radius: 15px;
+  }
+  .cont ul li{
+      display: flex;
+      gap: 10px;
+      font-size: 20px;
+  }
+  .cont ul li a{
+      color: white;
+  
+  }
+  
+  .cont ul li i{
+      width: 35px;
+      height: 35px;
+      overflow: hidden;
+      position: relative;
+      top: 2px;
+      height: 18px;
+      background-color: black;
+      border-radius: 30px;
+      transition: all.4s;
+  }
+  .contul ul li i:hover{
+   width: 10px;
+   height: 100px;
+  }
+  .cont ul span{
+      font-size: 25px;
+  }
+  .cont-img img{
+      width: 300px;
+      border-radius: 180px;
+      position: relative;
+      left: 0px;
+      top: 6rem;
+  }
+  /*aca hay que hacer un comando par que corra la imagen*/
+  .logo-emp img{
+      width: 70px;
+      height: 70px;
+  }
     
-}
+}    
+
 @media (max-width: 992px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
     /*navbar*/
     header{
-        width: 97%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: -7px;
+        
     }
     .img{
         width: 50px;
@@ -119,13 +187,15 @@
     }
     /*main*/
     main{
-        width: 94%;
+        width: 95%;
+        position: relative;
+        left: -7px;
     }
     #hero{
         flex-wrap: wrap;
         text-align: center;
-        margin: 20px;
-        padding: 20px;
+        margin: 0;
+        padding: 0;
         gap: 0;
 
     }
@@ -268,13 +338,34 @@
     .contacts{
         gap: 0;
     }
-}
+    .cont-img{
+        position: relative;
+        left: 8rem;
+    }
+    .cont-img{
+        animation: cont-img 2s infinite;
+    }
+    @keyframes cont-img{
+        100%{
+            transform: scaleX(1);
+        }
+        0%{
+            transform: scaleX(1, 2);
+        }
+    }
+    
+    
+    }
 @media (max-width: 768px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
     
     /*navbar sectiion*/
 
     .navbar {
-        width: 95%;
+        width: 94%;
         font-size: 10px;
         gap: 2px;
     }
@@ -296,6 +387,7 @@
         gap: 10px;
         display: none;
         transition: all .4s;
+        z-index: 2;
     }
     /*.navbar-list:hover{
         background-image: linear-gradient(to bottom, #26d80f, #06140b);
@@ -341,11 +433,10 @@
 
 
     main{
-        width: 92%;
+        width: 94%;
         
     }
     #hero{
-        /*width: 95%;*/
         flex-wrap: wrap;
         position: relative;
         /*top: 50px;*/
@@ -363,7 +454,7 @@
     }
     #hero .hero-info h1{
         position: relative;
-        top: 0;
+        top: -15px;
         left: 120px;
         width: 35rem;
         font-size: 40px;
@@ -374,6 +465,7 @@
     .hero-info p{
         position: relative;
         left: 3rem;
+        top: -7rem;
         width: 700px;
         font-size: 22px;
     
@@ -382,19 +474,11 @@
         font-weight: 700;
         color: var(--monitor);
     }
-    .hero-info .link, button {
-        /*display: flex;
-        justify-content: space-around;
-        width: 65px;
-        height: 30px;
-        border-radius: 20px;
-        font-weight: 700;
-        opacity: 0.9 ;
-        background-color: var(--btn-l);*/
+    .hero-info .links .link  {
         gap: 200px;
         position: relative;
         left: 25px;
-        top: 60px;
+        top: -2rem;
 
     }
     .hero-info .links, button >a{
@@ -403,7 +487,8 @@
         font-family: 'Josefin Sans', sans-serif;
         top: 7px;
         gap: 50px;
-    }   
+    } 
+  
     .hero_img img{
         width: 350px;
         background: var(--monitor);
@@ -531,7 +616,7 @@
     /*navbar sectiion*/
 
     .navbar {
-        width: 93%;
+        width: 92%;
         font-size: 10px;
         gap: 2px;
     }
@@ -599,7 +684,7 @@
 
 
     main{
-        width: 90%;
+        width: 92%;
         
     }
     #hero{
@@ -631,7 +716,7 @@
         width: 500px;
         position: relative;
         left: 60px;
-        font-size: 15px;
+        font-size: 25px;
     
     }
     .hero-info p span{
@@ -657,7 +742,7 @@
         background: var(--monitor);
         padding: 20px;
         position: relative;
-        top: 180px;
+        top: 140px;
         left: 0;
         border-radius: 15px;
         display: flex;
