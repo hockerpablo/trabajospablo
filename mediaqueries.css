@@ -11,10 +11,10 @@
 --cards-txt: rgb(112, 177, 233);
 }
 @media (max-width: 1200px){
-.navbar{
+    .navbar{
     width: 95%;
-}    
-    .img{
+    }
+      .img{
         width: 50px;
         height: 50px;
         
@@ -160,7 +160,18 @@
   .logo-emp img{
       width: 70px;
       height: 70px;
-  }
+  } 
+  .cont-img{
+    animation: cont-img 5s infinite;
+}
+@keyframes cont-img{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
     
 }    
 
@@ -338,23 +349,24 @@
     .contacts{
         gap: 0;
     }
+    .cont-img img{
+        width: 190px;
+    }
     .cont-img{
         position: relative;
-        left: 8rem;
+        left: -1rem;
     }
     .cont-img{
-        animation: cont-img 2s infinite;
+        animation: cont-img 5s infinite;
     }
     @keyframes cont-img{
-        100%{
-            transform: scaleX(1);
-        }
         0%{
-            transform: scaleX(1, 2);
+            transform: scale(0);
+        }
+        100%{
+            transform: scale(100%);
         }
     }
-    
-    
     }
 @media (max-width: 768px){
     *{
@@ -380,7 +392,8 @@
         border-radius: 15px;
         height: 200px;
         position: absolute;
-        top: 30px;
+        top: 0;
+        left: 30px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -389,11 +402,17 @@
         transition: all .4s;
         z-index: 2;
     }
-    /*.navbar-list:hover{
-        background-image: linear-gradient(to bottom, #26d80f, #06140b);
-        width: 92%;
-        height: 500px;
-    }*/
+     .navbar-list{
+        animation: navbar-list 4s alternate-reverse ;
+    } 
+    @keyframes navbar-list {
+        0%{
+            transform: translateX(-200%)
+        }
+        100%{    
+            transform: translateX(215%)
+        }
+    } 
     .navbar-list li{
             font-size: 18px;
             position: relative;
